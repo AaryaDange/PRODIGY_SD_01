@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+      <h1>Temperature Conversion</h1>
+      <form id="tempForm">
+          <label for="tempValue">Enter Temperature:</label>
+          <input type="number" id="tempValue" required>
+          <label for="tempUnit">Select Unit:</label>
+          <select id="tempUnit" required>
+              <option value="Celsius">Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="Kelvin">Kelvin</option>
+          </select>
+          <button type="submit">Convert</button>
+      </form>
+      <div id="result">
+          <p id="celsius"></p>
+          <p id="fahrenheit"></p>
+          <p id="kelvin"></p>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
